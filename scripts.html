@@ -23,16 +23,53 @@
             
             <div class="tutorial-content">
                 <div class="tutorial-step">
-                    <h3>Title</h3>
+                    <h3>Setting Permisions on a file</h3>
                     <p>
-                        paragraph
+                        There are a lot of great tutorials for how to change file permisions. Here is <a href="http://linuxcommand.org/lc3_lts0090.php">one</a>
+                        . For our purposes we only need chmod. Lets make a file called myScript and make it
+                        excecutable..
                     </p>
                     <pre>
                         <code>
-                            some code
+                            $ touch myScript 
+                            $ chmod +x myScrip
                         </code>
                     </pre>
                 </div>
+                
+                <div class="tutorial-step">
+                    <h3>Putting Commands Into a File</h3>
+                    <p>
+                        There are much better ways of editing a script file, namely, text editors, but for the 
+                        purposes of this tutorial we will just use echo.
+                    </p>
+                    <pre>
+                        <code>
+                            $ echo "#! /bin/bash" >> myScript 
+                            $ echo "echo Hello, World" >> myScript
+                            $ cat myScript 
+                            #! /bin/bash
+                            echo Hello, World
+                        </code>
+                    </pre>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Run The Script!</h3>
+                    <p>
+                        We just made a script! Lets run it using the './scriptName' syntax..
+                    </p>
+                    <pre>
+                        <code>
+                            $ ./myScript 
+                            Hello, World
+                        </code>
+                    </pre>
+                    <p>
+                        Our script simply prints out a friendly message, because, thats what we told it to do!
+                    </p>
+                </div>
+                
             </div>
         </main>
         
