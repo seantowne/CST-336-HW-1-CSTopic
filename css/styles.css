@@ -32,6 +32,10 @@ h1 {
     text-indent: 50px;
 }
 
+.code-block {
+    background-color: #eee;
+}
+
 nav a {
     padding: 15px;
     padding-bottom: 4px;
@@ -59,27 +63,3 @@ footer {
     color: blue;
 }
 
-table {
-    margin: 0px auto;
-}
-
-td {
-    padding-right: 10px;
-    font-size: 1.3em;
-}
-
-td strong {
-    color: orange;
-}
-
-
-
-
-
-
-
-
-iframe {
-    margin: 0px auto;
-    display: block;
-}
