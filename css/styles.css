@@ -8,6 +8,10 @@ header, main, nav, footer {
     text-align: center;
 }
 
+hr {
+    width: 50%;
+}
+
 h1 {
     font-family: "Courier New";
     font-size: 4em;
