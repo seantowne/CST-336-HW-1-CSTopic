@@ -23,9 +23,13 @@ h1 {
     width: 800px;
     margin: auto;
 }
-.informative-blurb {
+.tutorial-step {
     color: black;
     text-align: left;
+}
+
+.tutorial-paragraph {
+    text-indent: 50px;
 }
 
 nav a {
