@@ -19,7 +19,8 @@ h1 {
 }
 
 .informative-blurb {
-    color: red;
+    color: black;
+    text-align: left;
 }
 
 nav a {
