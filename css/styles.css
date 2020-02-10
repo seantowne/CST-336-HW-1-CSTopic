@@ -20,6 +20,7 @@ h1 {
 
 .tutorial-content {
     display: block;
+    width: 800px;
 }
 .informative-blurb {
     color: black;
