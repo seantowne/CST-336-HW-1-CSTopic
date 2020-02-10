@@ -18,6 +18,9 @@ h1 {
     color: blue;
 }
 
+.tutorial-content {
+    display: block;
+}
 .informative-blurb {
     color: black;
     text-align: left;
