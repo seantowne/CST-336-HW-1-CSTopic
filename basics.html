@@ -14,92 +14,91 @@
                 <a href="scripts.html">Scripts</a>
                 <a href="path.html">Path</a>
             </nav>
-            
-            <main>
-                <figure id="basics_page_bash_picture_figure">
-                    <img id="home_page_bash_picture_img" src="img/bashBasics.png" alt="A Picture" width="300"/>
-                </figure>
-                
-                <div class="tutorial-content">
-                    
-                    <div class="tutorial-step">
-                        <h3>Some Essential Commands</h3>
-                        <p class="tutorial-paragraph">
-                        Open up your terminal if you are on Mac or a Linux distrobution. If you are on windows
-                        go down to the Apple store and get yourself a real computer. Lets familiarize ourselves
-                        with some basic commands. Pwd will print your current, working, directory. Mkdir will
-                        make a new directory for you. Ls will list the files and direcctories in your current
-                        working directory. Lets try it.
-                        </p>
-                        <pre>
-                            <code class="code-block">
-                                $ pwd
-                                /tutorial
-                                $ mkdir test
-                                $ ls
-                                test
-                            </code>
-                        </pre>
-                    </div>
-                    
-                    <div class="tutorial-step">
-                        <h3>Change Directory</h3>
-                        <p class="tutorial-paragraph">
-                        The 'cd' command changes your current directory. You can give
-                        it an absolute path like '/Users/username/Desktop/vacationPhotos/' or you can give it a 
-                        relative path like 'vacationPhotos/" if you are in the same directory as the folder you
-                        are trying to navigate to. Two handy arguments for cd are './' and '../'. They are
-                        "current directory" and "parent directory" respectively. Lets try it
-                        </p>
-                        <pre>
-                            <code class="code-block">
-                                $ cd test/
-                                $ pwd
-                                /tutorial/test
-                                $ cd ../
-                                $ pwd
-                                /tutorial
-                                $ cd ./
-                                $ pwd
-                                /tutorial
-                            </code>
-                        </pre>
-                    </div>
-                    
-                    <div class="tutorial-step">
-                        <h3>Making, Moving, Copying, Viewing and Editing files</h3>
-                        <p class="tutorial-paragraph">
-                            You can make a file with the touch command. Mv will move or rename your files, it takes two arguments,
-                            first is the file you want to move/rename, second is the place you want to move it too and the name you
-                            want it to have. Cp is just like move except that it makes a copy of the file specified. One very simple
-                            way to add text to a file is to use echo, and once you have text inside the file, one way to view it is
-                            the cat command. Lets see..
-                        </p>
-                        <pre>
-                            <code class="code-block">
-                                $ touch file
-                                $ ls
-                                file  test
-                                $ mv file file.txt
-                                $ ls
-                                file.txt  test
-                                $ cp file.txt fileCopy.txt
-                                $ ls
-                                fileCopy.txt  file.txt  test
-                                $ echo "Some Text" >> file.txt 
-                                $ cat file.txt 
-                                Some Text
-                            </code>
-                        </pre>
-                        <p>
-                            I recomend using a regular old text editor to edit files and later in this turorial, scripts. Click on the 
-                            Scripts tab of this site to move on to actually making a script!
-                        </p>
-                    </div>
-                        
-                </div>
-            </main>
         </header>
+        <main>
+            <figure id="basics_page_bash_picture_figure">
+                <img id="home_page_bash_picture_img" src="img/bashBasics.png" alt="A Picture" width="300"/>
+            </figure>
+            
+            <div class="tutorial-content">
+                
+                <div class="tutorial-step">
+                    <h3>Some Essential Commands</h3>
+                    <p class="tutorial-paragraph">
+                    Open up your terminal if you are on Mac or a Linux distrobution. If you are on windows
+                    go down to the Apple store and get yourself a real computer. Lets familiarize ourselves
+                    with some basic commands. Pwd will print your current, working, directory. Mkdir will
+                    make a new directory for you. Ls will list the files and direcctories in your current
+                    working directory. Lets try it.
+                    </p>
+                    <pre>
+                        <code class="code-block">
+                            $ pwd
+                            /tutorial
+                            $ mkdir test
+                            $ ls
+                            test
+                        </code>
+                    </pre>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Change Directory</h3>
+                    <p class="tutorial-paragraph">
+                    The 'cd' command changes your current directory. You can give
+                    it an absolute path like '/Users/username/Desktop/vacationPhotos/' or you can give it a 
+                    relative path like 'vacationPhotos/" if you are in the same directory as the folder you
+                    are trying to navigate to. Two handy arguments for cd are './' and '../'. They are
+                    "current directory" and "parent directory" respectively. Lets try it
+                    </p>
+                    <pre>
+                        <code class="code-block">
+                            $ cd test/
+                            $ pwd
+                            /tutorial/test
+                            $ cd ../
+                            $ pwd
+                            /tutorial
+                            $ cd ./
+                            $ pwd
+                            /tutorial
+                        </code>
+                    </pre>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Making, Moving, Copying, Viewing and Editing files</h3>
+                    <p class="tutorial-paragraph">
+                        You can make a file with the touch command. Mv will move or rename your files, it takes two arguments,
+                        first is the file you want to move/rename, second is the place you want to move it too and the name you
+                        want it to have. Cp is just like move except that it makes a copy of the file specified. One very simple
+                        way to add text to a file is to use echo, and once you have text inside the file, one way to view it is
+                        the cat command. Lets see..
+                    </p>
+                    <pre>
+                        <code class="code-block">
+                            $ touch file
+                            $ ls
+                            file  test
+                            $ mv file file.txt
+                            $ ls
+                            file.txt  test
+                            $ cp file.txt fileCopy.txt
+                            $ ls
+                            fileCopy.txt  file.txt  test
+                            $ echo "Some Text" >> file.txt 
+                            $ cat file.txt 
+                            Some Text
+                        </code>
+                    </pre>
+                    <p>
+                        I recomend using a regular old text editor to edit files and later in this turorial, scripts. Click on the 
+                        Scripts tab of this site to move on to actually making a script!
+                    </p>
+                </div>
+                    
+            </div>
+        </main>
         
     
         <footer>
