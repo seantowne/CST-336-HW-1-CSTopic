@@ -21,6 +21,7 @@ h1 {
 .tutorial-content {
     display: block;
     width: 800px;
+    margin: auto;
 }
 .informative-blurb {
     color: black;
