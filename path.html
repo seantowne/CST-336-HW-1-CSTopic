@@ -16,7 +16,93 @@
             </nav>
         </header>
         
-        <figure id="path_page_"
+        <main>
+            <figure id="path_page_terminal_picture_figure">
+                <img id="path_page_terminal_picture_img" src="img/terminalPromt.png" alt="A Bash Logo" width="300"/>
+            </figure>
+            
+            <div class="tutorial-content">
+                <div class="tutorial-step">
+                    <h3>The Path variable</h3>
+                    <p>
+                        Unix like operating systems use a $PATH variable to indicate to
+                        bash where it can find the programs it runs. If we want to be able
+                        to have the bash shell know what we mean when we type myScript, we
+                        need to add it to a directory listed in the path variable. If we show
+                        the contents of path, we will see all the bin directories where bash 
+                        commands live.
+                    </p>
+                    <pre>
+                        <code>
+                            $ echo $PATH
+                            /home/ec2-user/.nvm/versions/node/v10.18.1/bin:/home/ec2-user/.rvm/gems/ruby-2.6.3/bin:
+                        </code>
+                    </pre>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>The Path variable</h3>
+                    <p>
+                        Lets make our own directory and add its path to the path variable so
+                        that we have a place for our custom scripts. We could add our scripts to 
+                        an existing directory listed in the path variable... but thats ugly. Many of
+                        those directories are meant for system use, and we don't want to lose track of 
+                        the ones that came with the system and the ones we make. Once we have added to the 
+                        path variable, lets move our script to our new Commands directory.
+                    </p>
+                    <pre>
+                        <code>
+                            $ mkdir ~/Commands
+                            $ PATH=$PATH:/Your/Path/To/Your/Home/Directory/Commands 
+                            $ mv myScript ~/Commands 
+                        </code>
+                    </pre>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Run Our Script from Anywhere!</h3>
+                    <p>
+                        Now that bash knows where to find our script, we can run it from
+                        any directory! Another perk is that now we don't have to use the './'
+                        before the name of our script for bash to know that it is an excecutable
+                        that we want to run.
+                    </p>
+                    <pre>
+                        <code>
+                            $ cd ~/Some/Random/Directory
+                            $ myScript 
+                            Hello, World
+                        </code>
+                    </pre>
+                    <p>
+                        We just made a bash script that bash will treat like one of its own built in
+                        commands. We can run it from any directory. Can you see the utility of this?
+                        One thing I like to do is write python scripts that do something I find usefull
+                        and then write a bash script that simply calls the python program. I even used a
+                        bash script to test and upload this website! Here it is, it simply runs all the 
+                        git and heroku commands that one would normally call to save their code and push it 
+                        to the cloud.
+                    </p>
+                    <pre>
+                        <code>
+                            #! /bin/bash
+
+                            comment=$1
+                            if [ -z "$1" ]; then
+                                comment="AutomatedCommitAndPush"
+                            fi
+                            
+                            git status
+                            git add -A
+                            git status
+                            git commit -m "$comment"
+                            git push origin master
+                            git push heroku master
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </main>
     </body>
     
     <footer>
