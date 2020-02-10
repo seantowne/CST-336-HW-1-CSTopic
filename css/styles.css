@@ -14,6 +14,14 @@ h1 {
     margin-bottom: 0px;
 }
 
+.resourceLink {
+    color: blue;
+}
+
+.informative-blurb {
+    color: red;
+}
+
 nav a {
     padding: 15px;
     padding-bottom: 4px;
@@ -30,13 +38,7 @@ nav a:hover {
 
 
 
-#BioPic, #MyBio {
-    float: left;
-}
 
-#MyBio {
-    text-align: left;
-}
 
 footer {
     clear: both;
@@ -60,22 +62,12 @@ td strong {
     color: orange;
 }
 
-#table-header {
-    background-color: #351a00;
-}
 
-.table-row {
-    background-color: #753900;
-}
 
-ul {
-    text-align: left;
-    padding-left: 200px;
-}
 
-.hobby {
-    color: brown;
-}
+
+
+
 
 iframe {
     margin: 0px auto;
