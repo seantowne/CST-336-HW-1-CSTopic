@@ -35,6 +35,7 @@ h1 {
 .code-block {
     background-color: #eee;
     text-align: left;
+    width: 500px;
 }
 
 nav a {
