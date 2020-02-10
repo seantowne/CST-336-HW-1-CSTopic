@@ -32,7 +32,7 @@
                     <pre>
                         <code>
                             $ touch myScript 
-                            $ chmod +x myScrip
+                            $ chmod +x myScript
                         </code>
                     </pre>
                 </div>
@@ -67,7 +67,31 @@
                     </pre>
                     <p>
                         Our script simply prints out a friendly message, because, thats what we told it to do!
+                        That '#! /bin/bash" thing specifies myScript as a bash script. That line where we used
+                        the word 'echo' twice was echo-ing in the echo command. Meta huh.
                     </p>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>Limitations</h3>
+                    <p>
+                        Our script will only run from within the directory it is in. In other words, if you
+                        wanted to run our script from outside its directory, you would need to specify either
+                        the absolute path to it, or the relative path to it from your working directory.
+                        Ill show you how to get around that the path tab of this site.
+                    </p>
+                    <pre>
+                        <code>
+                            $ pwd
+                            /tutorial
+                            $ ls
+                            fileCopy.txt  file.txt  myScript  test
+                            $ cd test/
+                            $ ./myScript
+                            bash: ./myScript: No such file or director
+                        </code>
+                    </pre>
+            
                 </div>
                 
             </div>
