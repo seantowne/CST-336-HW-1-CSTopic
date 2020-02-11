@@ -26,7 +26,6 @@ h1 {
     display: block;
     width: 800px;
     margin: auto;
-    transform: rotate(2deg);
 }
 .tutorial-step {
     color: black;
